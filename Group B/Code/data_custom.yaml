@@ -1,0 +1,6 @@
+train: C:\Users\fjuan\Desktop\yolo\train
+val: C:\Users\fjuan\Desktop\yolo\val
+
+nc: 1
+
+names: ["bh"]
