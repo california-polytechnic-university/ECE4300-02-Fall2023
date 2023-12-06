@@ -29,7 +29,7 @@ function delete_done_folders {
 }
 
 send_to_discord() {
-    local webhook_url="DISCORD_WEBHOOK"
+    local webhook_url="https://discord.com/api/webhooks/1165853347388080138/lRTiybGckyxE8dK8xuZkIS_KwFS-YdUZuqdd4y01D58ggzhHNgRi6pyIdqZZgRN_hRGf"
     local message="$1"
     local file="$2"
     curl -H "Content-Type: multipart/form-data" -F "file=@$file" "$webhook_url"
@@ -77,7 +77,11 @@ run_benchmark() {
             echo "$script_output"
 
             execution_time=$(echo "$script_output" | grep -oE "Execution Time: [0-9]+\.[0-9]+ seconds" | awk '{print $3}')
-            formatted_execution_time=$(printf "%.6f" "$execution_time")
+            if [ -z "$execution_time" ]; then
+                formatted_execution_time="DNF"  
+            else
+                formatted_execution_time=$(printf "%.6f" "$execution_time")
+            fi
 
             local_date_time=$(date +"%Y-%m-%d %H:%M:%S")
 
