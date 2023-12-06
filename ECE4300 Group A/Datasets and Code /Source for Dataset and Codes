@@ -1,4 +1,18 @@
-Main Dataset: https://universe.roboflow.com/erwin-fernanda-mmwsv/mineral-detection-ijdls/dataset/1
-Sorry, I couldn't get the ZIP file to upload as it's over 25MB. 
+Main Source Link Used for Mineral Dataset: https://universe.roboflow.com/erwin-fernanda-mmwsv/mineral-detection-ijdls/dataset/1
 
-Commands used:
+Main Source Link in a Zip Folder: https://livecsupomona-my.sharepoint.com/:u:/g/personal/arthurwang_cpp_edu/EfugW0jtzlFDsYNP0xkOxaABAdSnETnwvJtOP911l-eNMQ?e=9zQUfg
+
+Main Source Link in a Tweaked Zip Folder that was used to test YOLOv5: https://livecsupomona-my.sharepoint.com/:u:/g/personal/arthurwang_cpp_edu/EcM52O13a2dNkbsQHu8hSsEBXyB3xi1uJCEhjoVv64D2HA?e=IkujX9
+
+YOLOv5: https://livecsupomona-my.sharepoint.com/:u:/g/personal/arthurwang_cpp_edu/ESc2WhVcRGRNru0JEP95XQUBwNxPSCAhsRJvQvM4Y3QEwg?e=HD3ZpI
+
+GitHub Link used to download YOLOv: https://github.com/ultralytics/yolov5
+
+PyTorch Link used to test YOLOv5 with and without our GPUs: https://pytorch.org/
+PyTorch Options Used: 
+- Stable (2.1.1) -> PyTorch Build
+- Windows -> Your OS
+- Pip -> Package
+- Python -> Language 
+- CUDA 11.8  OR CPU -> Compute Platform  
+CUDA 11.8 was used when testing with the GPUs while CPU was used for CPU-only tests. 
